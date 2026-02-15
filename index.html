@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Álvaro Iglesias — Desarrollador de Agentes de IA</title>
+    <title>Álvaro Iglesias — Agentes de IA</title>
     <meta name="description"
-        content="Portfolio de Álvaro Iglesias, desarrollador especializado en agentes de inteligencia artificial, automatización inteligente y soluciones con LLMs.">
+        content="Desarrollador especializado en agentes de inteligencia artificial, automatización inteligente y soluciones con LLMs.">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-content">
-            <a href="index.html" class="nav-logo">alvaro<span>.ai</span></a>
+            <a href="index.html" class="nav-logo">alvaro.iglesias<span>.ai</span></a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="active">Inicio</a></li>
                 <li><a href="proyectos.html">Proyectos</a></li>
@@ -23,74 +23,156 @@
                 <li><a href="formaciones.html">Formaciones</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Menú">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú"><span></span><span></span><span></span></button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">Disponible para proyectos</div>
-                <h1>Construyo <span class="highlight">agentes de IA</span> que transforman negocios</h1>
-                <p class="hero-description">
-                    Desarrollo soluciones inteligentes con agentes autónomos, sistemas RAG y automatización avanzada.
-                    Especializado en LangChain, OpenAI API y arquitecturas multi-agente que resuelven problemas reales.
-                </p>
-                <div class="hero-cta">
-                    <a href="proyectos.html" class="btn btn-primary">Ver proyectos →</a>
-                    <a href="contacto.html" class="btn btn-outline">Hablemos</a>
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <span class="hero-tag">Desarrollo de Agentes Autónomos</span>
+                    <h1>Te ahorro <span class="glitch-word" id="glitchWord1">tiempo</span>,<span class="line-break dim">
+                            desarrollando <span class="glitch-word" id="glitchWord2">agentes</span> que <span
+                                class="glitch-word" id="glitchWord3">trabajarán</span> para ti.</span></h1>
+                    <p class="hero-description">
+                        Arquitecto de soluciones con agentes de IA, sistemas RAG y automatización avanzada.
+                        Diseño infraestructura inteligente para empresas que necesitan precisión y escala.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="proyectos.html" class="btn btn-primary">Ver Proyectos</a>
+                        <a href="contacto.html" class="btn btn-ghost">Contactar →</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="" alt="AI Agent Animation" id="heroGif"
+                        style="width:100%;height:100%;object-fit:cover;border-radius:16px;display:none;">
+                    <div class="hero-visual-placeholder">GIF</div>
                 </div>
             </div>
         </div>
-        <div class="hero-visual">
-            <div class="orb"></div>
+    </section>
+
+    <!-- Services Carousel -->
+    <section class="services-carousel" id="servicesCarousel">
+        <div class="carousel-slides">
+            <div class="carousel-slide active" data-index="0">
+                <div class="slide-bg"></div>
+                <div class="slide-content">
+                    <span class="slide-number">01</span>
+                    <span class="slide-icon">🎙️</span>
+                    <h2>Agentes de Voz</h2>
+                    <p>Asistentes conversacionales con IA que atienden llamadas, cualifican leads y gestionan reservas
+                        las 24 horas, los 7 días de la semana.</p>
+                </div>
+            </div>
+            <div class="carousel-slide" data-index="1">
+                <div class="slide-bg"></div>
+                <div class="slide-content">
+                    <span class="slide-number">02</span>
+                    <span class="slide-icon">💬</span>
+                    <h2>Chatbots</h2>
+                    <p>Chatbots inteligentes integrados en WhatsApp, Telegram y web que resuelven dudas, cualifican
+                        clientes y cierran ventas por ti.</p>
+                </div>
+            </div>
+            <div class="carousel-slide" data-index="2">
+                <div class="slide-bg"></div>
+                <div class="slide-content">
+                    <span class="slide-number">03</span>
+                    <span class="slide-icon">⚡</span>
+                    <h2>Sistemas Inteligentes</h2>
+                    <p>Automatizaciones con RAG, APIs y flujos de trabajo que eliminan tareas repetitivas y escalan tu
+                        negocio sin intervención humana.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-nav">
+            <button class="carousel-dot active" data-slide="0"></button>
+            <button class="carousel-dot" data-slide="1"></button>
+            <button class="carousel-dot" data-slide="2"></button>
+        </div>
+        <div class="carousel-progress">
+            <div class="carousel-progress-bar" id="carouselProgress"></div>
         </div>
     </section>
+
+    <hr class="divider">
 
     <!-- Stats -->
-    <section class="section">
+    <section class="section" style="padding: 0;">
         <div class="container">
-            <div class="stats-row fade-in">
-                <div class="stat-item">
-                    <span class="stat-number">+30</span>
-                    <span class="stat-label">Agentes de IA desplegados</span>
+            <div class="stats-grid reveal">
+                <div class="stat">
+                    <span class="stat-value">+30</span>
+                    <span class="stat-label">Agentes de IA<br>desplegados en producción</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">+5</span>
-                    <span class="stat-label">Años de experiencia</span>
+                <div class="stat">
+                    <span class="stat-value">+5</span>
+                    <span class="stat-label">Años de experiencia<br>en desarrollo</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">+15</span>
-                    <span class="stat-label">Clientes satisfechos</span>
+                <div class="stat">
+                    <span class="stat-value">98%</span>
+                    <span class="stat-label">Tasa de satisfacción<br>de clientes</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">98%</span>
-                    <span class="stat-label">Tasa de satisfacción</span>
+                <div class="stat">
+                    <span class="stat-value">24/7</span>
+                    <span class="stat-label">Agentes operando<br>de forma autónoma</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Projects Preview -->
+    <!-- Infrastructure -->
     <section class="section">
         <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-tag">Proyectos Destacados</span>
-                <h2 class="section-title">Soluciones de IA en acción</h2>
-                <p class="section-subtitle">Cada proyecto resuelve un problema real con agentes inteligentes, RAG y
-                    automatización.</p>
+            <div class="section-header reveal">
+                <span class="section-tag">Infraestructura</span>
+                <h2 class="section-title">Stack de Agentes de IA</h2>
+                <p class="section-subtitle">Cada componente diseñado para máxima precisión, escalabilidad y autonomía en
+                    producción.</p>
             </div>
-            <div class="projects-grid">
-                <div class="card project-card fade-in">
-                    <div class="project-image">🤖</div>
+            <div class="feature-grid reveal">
+                <div class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Orquestación</h3>
+                    <p>Arquitecturas multi-agente con LangGraph y CrewAI para flujos de trabajo complejos.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🔍</span>
+                    <h3>RAG Avanzado</h3>
+                    <p>Sistemas de recuperación con embeddings, re-ranking y bases vectoriales optimizadas.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🛡️</span>
+                    <h3>Producción</h3>
+                    <p>Despliegue robusto con monitorización, logging y circuit breakers automáticos.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🎯</span>
+                    <h3>Precisión</h3>
+                    <p>Prompt engineering avanzado y evaluación sistemática para máxima fiabilidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Featured Projects -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-subtitle">Soluciones de agentes de IA que generan impacto real.</p>
+            </div>
+            <div class="projects-grid reveal">
+                <div class="project-card">
+                    <span class="project-number">01</span>
                     <h3>Asistente Legal Inteligente</h3>
-                    <p>Agente RAG que analiza documentos legales y proporciona respuestas contextualizadas, reduciendo
-                        un 70% el tiempo de consulta.</p>
+                    <p>Sistema RAG que analiza +10.000 documentos legales, reduciendo un 70% el tiempo de consulta.</p>
                     <div class="project-tags">
                         <span class="tag">LangChain</span>
                         <span class="tag">OpenAI</span>
@@ -98,11 +180,10 @@
                     </div>
                     <a href="proyectos.html" class="project-link">Ver detalles →</a>
                 </div>
-                <div class="card project-card fade-in">
-                    <div class="project-image">⚡</div>
-                    <h3>Automatización de Soporte</h3>
-                    <p>Sistema multi-agente que gestiona tickets de soporte, clasifica prioridades y genera respuestas
-                        automáticas.</p>
+                <div class="project-card">
+                    <span class="project-number">02</span>
+                    <h3>Multi-Agente de Soporte</h3>
+                    <p>Plataforma que gestiona +500 tickets diarios con 92% de resolución automática.</p>
                     <div class="project-tags">
                         <span class="tag">CrewAI</span>
                         <span class="tag">FastAPI</span>
@@ -110,57 +191,175 @@
                     </div>
                     <a href="proyectos.html" class="project-link">Ver detalles →</a>
                 </div>
-                <div class="card project-card fade-in">
-                    <div class="project-image">📊</div>
-                    <h3>Pipeline de Análisis de Datos</h3>
-                    <p>Agente autónomo que extrae, transforma y analiza datos empresariales generando informes
-                        ejecutivos automáticos.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">LangGraph</span>
-                        <span class="tag">Pandas</span>
-                    </div>
-                    <a href="proyectos.html" class="project-link">Ver detalles →</a>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container reveal">
+            <h2>Inteligencia<br>Artificial.</h2>
+            <p>Explora cómo los agentes autónomos pueden transformar tu negocio.</p>
+            <a href="contacto.html" class="btn btn-outline">Contactar →</a>
+        </div>
+    </section>
+
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-content">
+            <p>© 2026 Álvaro Iglesias</p>
             <div class="footer-links">
                 <a href="https://github.com" target="_blank">GitHub</a>
                 <a href="https://linkedin.com" target="_blank">LinkedIn</a>
                 <a href="https://twitter.com" target="_blank">Twitter</a>
             </div>
-            <p>© 2026 Álvaro Iglesias. Todos los derechos reservados.</p>
         </div>
     </footer>
 
+    <style>
+        .glitch-word {
+            display: inline-block;
+            font-family: 'Space Grotesk', monospace;
+            position: relative;
+        }
+
+        .glitch-word.glitching {
+            animation: glitchShake 0.08s linear infinite;
+        }
+
+        @keyframes glitchShake {
+            0% {
+                transform: translate(0);
+            }
+
+            25% {
+                transform: translate(1px, -1px);
+            }
+
+            50% {
+                transform: translate(-1px, 1px);
+            }
+
+            75% {
+                transform: translate(1px, 0);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+    </style>
+
     <script>
-        // Mobile nav toggle
-        document.getElementById('navToggle').addEventListener('click', () => {
-            document.getElementById('navLinks').classList.toggle('open');
-        });
+        document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
+        window.addEventListener('scroll', () => document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50));
+        const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
-        });
-
-        // Fade-in on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+        // Shared glitch scramble function
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*!?<>{}[]';
+        function scramble(el, wordList, indexRef) {
+            const from = wordList[indexRef.i];
+            indexRef.i = (indexRef.i + 1) % wordList.length;
+            const to = wordList[indexRef.i];
+            const maxLen = Math.max(from.length, to.length);
+            const padded = to.padEnd(maxLen);
+            let resolved = new Array(maxLen).fill(false);
+            let display = from.split('');
+            let ticks = 0;
+            el.classList.add('glitching');
+            const iv = setInterval(() => {
+                ticks++;
+                for (let i = 0; i < maxLen; i++) {
+                    if (!resolved[i]) {
+                        if (ticks > 2 + i) {
+                            resolved[i] = true;
+                            display[i] = padded[i];
+                        } else {
+                            display[i] = chars[Math.floor(Math.random() * chars.length)];
+                        }
+                    }
                 }
+                el.textContent = display.join('').trimEnd();
+                if (resolved.every(Boolean)) {
+                    clearInterval(iv);
+                    el.classList.remove('glitching');
+                    el.textContent = to;
+                }
+            }, 50);
+        }
+
+        // Both transition at the same time
+        const ref1 = { i: 0 };
+        const ref2 = { i: 0 };
+        const ref3 = { i: 0 };
+        setInterval(() => {
+            scramble(document.getElementById('glitchWord1'), ['tiempo', 'dinero'], ref1);
+            scramble(document.getElementById('glitchWord2'), ['agentes', 'sistemas'], ref2);
+            scramble(document.getElementById('glitchWord3'), ['trabajarán', 'venderán', 'resolverán'], ref3);
+        }, 3000);
+
+        // GSAP Services Carousel
+        (function () {
+            const slides = document.querySelectorAll('#servicesCarousel .carousel-slide');
+            const dots = document.querySelectorAll('#servicesCarousel .carousel-dot');
+            const progressBar = document.getElementById('carouselProgress');
+            let current = 0;
+            const total = slides.length;
+            const duration = 5; // seconds per slide
+
+            function goToSlide(next) {
+                if (next === current) return;
+                const outSlide = slides[current];
+                const inSlide = slides[next];
+                const outContent = outSlide.querySelector('.slide-content');
+                const inContent = inSlide.querySelector('.slide-content');
+
+                const tl = gsap.timeline();
+
+                // Animate out
+                tl.to(outContent.children, {
+                    y: -40, opacity: 0, stagger: 0.05, duration: 0.4, ease: 'power3.in'
+                });
+                tl.set(outSlide, { className: 'carousel-slide' });
+
+                // Prep in
+                tl.set(inSlide, { className: 'carousel-slide active' });
+                tl.set(inContent.children, { y: 60, opacity: 0 });
+
+                // Animate in
+                tl.to(inContent.children, {
+                    y: 0, opacity: 1, stagger: 0.08, duration: 0.6, ease: 'power3.out'
+                });
+
+                // Update dots
+                dots.forEach(d => d.classList.remove('active'));
+                dots[next].classList.add('active');
+
+                current = next;
+                resetProgress();
+            }
+
+            function resetProgress() {
+                gsap.killTweensOf(progressBar);
+                gsap.fromTo(progressBar, { scaleX: 0 }, {
+                    scaleX: 1, duration: duration, ease: 'none',
+                    onComplete: () => goToSlide((current + 1) % total)
+                });
+            }
+
+            // Dot clicks
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const idx = parseInt(dot.dataset.slide);
+                    if (idx !== current) goToSlide(idx);
+                });
             });
-        }, { threshold: 0.1 });
 
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+            // Init first slide
+            gsap.set(slides[0].querySelector('.slide-content').children, { y: 0, opacity: 1 });
+            resetProgress();
+        })();
     </script>
-
 </body>
 
 </html>
