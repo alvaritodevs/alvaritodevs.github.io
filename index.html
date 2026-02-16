@@ -54,85 +54,88 @@
         </div>
     </section>
 
-    <!-- Services Carousel -->
-    <section class="services-carousel" id="servicesCarousel">
-        <div class="services-bg"></div>
-        <div class="container">
-            <div class="services-layout">
-                <!-- Left: Text content -->
-                <div class="services-text">
-                    <div class="services-slides">
-                        <div class="service-slide active" data-index="0">
-                            <span class="service-number">01</span>
-                            <span class="service-icon">🎙️</span>
-                            <h2 class="service-title">Agentes de Voz</h2>
-                            <p class="service-desc">Asistentes conversacionales con IA que atienden llamadas, cualifican
-                                leads y gestionan reservas las 24 horas, los 7 días de la semana.</p>
-                            <div class="service-tags">
-                                <span class="service-tag">ElevenLabs</span>
-                                <span class="service-tag">Twilio</span>
-                                <span class="service-tag">GPT-4</span>
-                            </div>
-                        </div>
-                        <div class="service-slide" data-index="1">
-                            <span class="service-number">02</span>
-                            <span class="service-icon">💬</span>
-                            <h2 class="service-title">Chatbots</h2>
-                            <p class="service-desc">Chatbots inteligentes integrados en WhatsApp, Telegram y web que
-                                resuelven dudas, cualifican clientes y cierran ventas por ti.</p>
-                            <div class="service-tags">
-                                <span class="service-tag">WhatsApp API</span>
-                                <span class="service-tag">LangChain</span>
-                                <span class="service-tag">RAG</span>
-                            </div>
-                        </div>
-                        <div class="service-slide" data-index="2">
-                            <span class="service-number">03</span>
-                            <span class="service-icon">⚡</span>
-                            <h2 class="service-title">Sistemas Inteligentes</h2>
-                            <p class="service-desc">Automatizaciones con RAG, APIs y flujos de trabajo que eliminan
-                                tareas repetitivas y escalan tu negocio sin intervención humana.</p>
-                            <div class="service-tags">
-                                <span class="service-tag">CrewAI</span>
-                                <span class="service-tag">LangGraph</span>
-                                <span class="service-tag">FastAPI</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-controls">
-                        <div class="services-dots">
-                            <button class="service-dot active" data-slide="0"><span></span></button>
-                            <button class="service-dot" data-slide="1"><span></span></button>
-                            <button class="service-dot" data-slide="2"><span></span></button>
-                        </div>
-                        <div class="services-progress">
-                            <div class="services-progress-bar" id="servicesProgress"></div>
-                        </div>
+    <!-- Agents Slider — Award-Winning 3D Carousel -->
+    <section class="agents-slider" id="agentsSlider">
+        <!-- Futuristic background layers -->
+        <div class="slider-bg">
+            <div class="slider-grid"></div>
+            <div class="slider-scanlines"></div>
+            <div class="slider-particles">
+                <span class="particle p1"></span><span class="particle p2"></span>
+                <span class="particle p3"></span><span class="particle p4"></span>
+                <span class="particle p5"></span><span class="particle p6"></span>
+                <span class="particle p7"></span><span class="particle p8"></span>
+            </div>
+        </div>
+
+        <!-- 3D Stage -->
+        <div class="slider-stage">
+            <!-- Card 0 -->
+            <div class="agent-card active" data-index="0">
+                <div class="card-glow"></div>
+                <div class="card-inner">
+                    <span class="card-number">01</span>
+                    <span class="card-icon">🎙️</span>
+                    <h2 class="card-title">Agentes de Voz</h2>
+                    <p class="card-desc">Asistentes conversacionales con IA que atienden llamadas, cualifican leads y
+                        gestionan reservas 24/7.</p>
+                    <div class="card-tags">
+                        <span class="card-tag">ElevenLabs</span>
+                        <span class="card-tag">Twilio</span>
+                        <span class="card-tag">GPT-4</span>
                     </div>
                 </div>
-                <!-- Right: GIF Visual -->
-                <div class="services-visual">
-                    <div class="services-visual-inner">
-                        <div class="service-gif active" data-index="0">
-                            <div class="gif-placeholder">
-                                <span class="gif-placeholder-icon">🎙️</span>
-                                <span class="gif-placeholder-text">Agentes de Voz</span>
-                            </div>
-                        </div>
-                        <div class="service-gif" data-index="1">
-                            <div class="gif-placeholder">
-                                <span class="gif-placeholder-icon">💬</span>
-                                <span class="gif-placeholder-text">Chatbots</span>
-                            </div>
-                        </div>
-                        <div class="service-gif" data-index="2">
-                            <div class="gif-placeholder">
-                                <span class="gif-placeholder-icon">⚡</span>
-                                <span class="gif-placeholder-text">Sistemas Inteligentes</span>
-                            </div>
-                        </div>
+                <div class="card-holo"></div>
+            </div>
+            <!-- Card 1 -->
+            <div class="agent-card" data-index="1">
+                <div class="card-glow"></div>
+                <div class="card-inner">
+                    <span class="card-number">02</span>
+                    <span class="card-icon">💬</span>
+                    <h2 class="card-title">Chatbots</h2>
+                    <p class="card-desc">Chatbots inteligentes integrados en WhatsApp, Telegram y web que cualifican
+                        clientes y cierran ventas.</p>
+                    <div class="card-tags">
+                        <span class="card-tag">WhatsApp API</span>
+                        <span class="card-tag">LangChain</span>
+                        <span class="card-tag">RAG</span>
                     </div>
                 </div>
+                <div class="card-holo"></div>
+            </div>
+            <!-- Card 2 -->
+            <div class="agent-card" data-index="2">
+                <div class="card-glow"></div>
+                <div class="card-inner">
+                    <span class="card-number">03</span>
+                    <span class="card-icon">⚡</span>
+                    <h2 class="card-title">Sistemas Inteligentes</h2>
+                    <p class="card-desc">Automatizaciones con RAG, APIs y flujos de trabajo que eliminan tareas
+                        repetitivas y escalan tu negocio.</p>
+                    <div class="card-tags">
+                        <span class="card-tag">CrewAI</span>
+                        <span class="card-tag">LangGraph</span>
+                        <span class="card-tag">FastAPI</span>
+                    </div>
+                </div>
+                <div class="card-holo"></div>
+            </div>
+        </div>
+
+        <!-- Navigation arrows -->
+        <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Anterior">‹</button>
+        <button class="slider-arrow slider-next" id="sliderNext" aria-label="Siguiente">›</button>
+
+        <!-- Bottom nav -->
+        <div class="slider-nav">
+            <div class="slider-dots">
+                <button class="slider-dot active" data-slide="0"><span></span></button>
+                <button class="slider-dot" data-slide="1"><span></span></button>
+                <button class="slider-dot" data-slide="2"><span></span></button>
+            </div>
+            <div class="slider-progress">
+                <div class="slider-progress-bar" id="sliderProgress"></div>
             </div>
         </div>
     </section>
@@ -471,61 +474,97 @@
             scramble(document.getElementById('glitchWord3'), ['trabajarán', 'venderán', 'resolverán'], ref3);
         }, 3000);
 
-        // GSAP Services Carousel
+        // GSAP Agents Slider — 3D Rotation
         (function () {
-            const section = document.getElementById('servicesCarousel');
-            const slides = section.querySelectorAll('.service-slide');
-            const gifs = section.querySelectorAll('.service-gif');
-            const dots = section.querySelectorAll('.service-dot');
-            const progressBar = document.getElementById('servicesProgress');
+            const section = document.getElementById('agentsSlider');
+            const cards = section.querySelectorAll('.agent-card');
+            const dots = section.querySelectorAll('.slider-dot');
+            const progressBar = document.getElementById('sliderProgress');
+            const prevBtn = document.getElementById('sliderPrev');
+            const nextBtn = document.getElementById('sliderNext');
             let current = 0;
-            const total = slides.length;
+            const total = cards.length;
             const duration = 6;
+            let isAnimating = false;
 
-            function getSlideElements(slide) {
-                return slide.querySelectorAll('.service-number, .service-icon, .service-title, .service-desc, .service-tags');
+            // Position map: center (active), left-back, right-back
+            const positions = {
+                center: { x: 0, z: 0, rotateY: 0, scale: 1, opacity: 1, filter: 'blur(0px) brightness(1)' },
+                left: { x: -420, z: -300, rotateY: 25, scale: 0.72, opacity: 0.45, filter: 'blur(5px) brightness(0.6)' },
+                right: { x: 420, z: -300, rotateY: -25, scale: 0.72, opacity: 0.45, filter: 'blur(5px) brightness(0.6)' }
+            };
+
+            function getCardElements(card) {
+                return card.querySelectorAll('.card-number, .card-icon, .card-title, .card-desc, .card-tags');
+            }
+
+            function setInitialPositions() {
+                cards.forEach((card, i) => {
+                    const pos = i === 0 ? positions.center : i === 1 ? positions.right : positions.left;
+                    gsap.set(card, {
+                        x: pos.x, z: pos.z, rotateY: pos.rotateY,
+                        scale: pos.scale, opacity: pos.opacity,
+                        filter: pos.filter, zIndex: i === 0 ? 10 : 1
+                    });
+                    if (i === 0) {
+                        gsap.set(getCardElements(card), { y: 0, opacity: 1 });
+                        gsap.set(card.querySelector('.card-glow'), { opacity: 1 });
+                        gsap.set(card.querySelector('.card-holo'), { opacity: 1 });
+                    } else {
+                        gsap.set(getCardElements(card), { y: 30, opacity: 0 });
+                        gsap.set(card.querySelector('.card-glow'), { opacity: 0 });
+                        gsap.set(card.querySelector('.card-holo'), { opacity: 0 });
+                    }
+                });
             }
 
             function goToSlide(next) {
-                if (next === current) return;
-                const outSlide = slides[current];
-                const inSlide = slides[next];
-                const outGif = gifs[current];
-                const inGif = gifs[next];
+                if (next === current || isAnimating) return;
+                isAnimating = true;
 
-                const tl = gsap.timeline();
+                const prev = (next + total - 1) % total;
+                const after = (next + 1) % total;
+                const oldCard = cards[current];
+                const newCard = cards[next];
 
-                // Animate out text
-                tl.to(getSlideElements(outSlide), {
-                    y: -30, opacity: 0, stagger: 0.04, duration: 0.35, ease: 'power2.in'
+                const tl = gsap.timeline({
+                    onComplete: () => { isAnimating = false; }
                 });
 
-                // Animate out GIF
-                tl.to(outGif, {
-                    opacity: 0, scale: 0.92, duration: 0.4, ease: 'power2.in'
-                }, '<0.1');
+                // Fade out active card's inner content
+                tl.to(getCardElements(oldCard), {
+                    y: -20, opacity: 0, stagger: 0.03, duration: 0.3, ease: 'power2.in'
+                }, 0);
+                tl.to(oldCard.querySelector('.card-glow'), { opacity: 0, duration: 0.3 }, 0);
+                tl.to(oldCard.querySelector('.card-holo'), { opacity: 0, duration: 0.3 }, 0);
 
-                // Swap active classes
-                tl.call(() => {
-                    outSlide.classList.remove('active');
-                    inSlide.classList.add('active');
-                    outGif.classList.remove('active');
-                    inGif.classList.add('active');
+                // Move all cards to new positions
+                cards.forEach((card, i) => {
+                    let pos;
+                    if (i === next) pos = positions.center;
+                    else if (i === prev) pos = positions.left;
+                    else pos = positions.right;
+
+                    tl.to(card, {
+                        x: pos.x, z: pos.z, rotateY: pos.rotateY,
+                        scale: pos.scale, opacity: pos.opacity,
+                        filter: pos.filter,
+                        zIndex: i === next ? 10 : 1,
+                        duration: 0.8, ease: 'power3.inOut'
+                    }, 0.2);
                 });
 
-                // Prep incoming elements
-                tl.set(getSlideElements(inSlide), { y: 50, opacity: 0 });
-                tl.set(inGif, { opacity: 0, scale: 1.06 });
+                // Reveal new active card's content
+                tl.set(getCardElements(newCard), { y: 40, opacity: 0 }, 0.6);
+                tl.to(getCardElements(newCard), {
+                    y: 0, opacity: 1, stagger: 0.06, duration: 0.5, ease: 'power3.out'
+                }, 0.65);
+                tl.to(newCard.querySelector('.card-glow'), { opacity: 1, duration: 0.5 }, 0.6);
+                tl.to(newCard.querySelector('.card-holo'), { opacity: 1, duration: 0.6, ease: 'power2.out' }, 0.7);
 
-                // Animate in GIF
-                tl.to(inGif, {
-                    opacity: 1, scale: 1, duration: 0.6, ease: 'power3.out'
-                });
-
-                // Animate in text
-                tl.to(getSlideElements(inSlide), {
-                    y: 0, opacity: 1, stagger: 0.07, duration: 0.55, ease: 'power3.out'
-                }, '<0.1');
+                // Update active class
+                cards.forEach(c => c.classList.remove('active'));
+                newCard.classList.add('active');
 
                 // Update dots
                 dots.forEach(d => d.classList.remove('active'));
@@ -543,6 +582,7 @@
                 });
             }
 
+            // Dot clicks
             dots.forEach(dot => {
                 dot.addEventListener('click', () => {
                     const idx = parseInt(dot.dataset.slide);
@@ -550,9 +590,12 @@
                 });
             });
 
-            // Init first slide
-            gsap.set(getSlideElements(slides[0]), { y: 0, opacity: 1 });
-            gsap.set(gifs[0], { opacity: 1, scale: 1 });
+            // Arrow clicks
+            prevBtn.addEventListener('click', () => goToSlide((current - 1 + total) % total));
+            nextBtn.addEventListener('click', () => goToSlide((current + 1) % total));
+
+            // Init
+            setInitialPositions();
             resetProgress();
         })();
 
